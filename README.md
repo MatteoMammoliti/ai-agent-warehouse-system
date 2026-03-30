@@ -26,9 +26,5 @@ This project implements a **Conditional State Machine** for warehouse management
 ├── chains/               # Specialized LLM chains (Router, Validator, Generator)
 ├── nodes/                # Python logic for each Graph state node
 ├── schemas/              # Pydantic models & GraphState definition
-├── magazzino.db          # SQLite Database
 ├── graph.py              # Main LangGraph orchestration & Graph compilation
-└── output.png            # Mermaid diagram of the compiled graph
 ```
-
-Developed with ❤️ using Python, LangGraph and Llama 3.
