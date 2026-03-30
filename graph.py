@@ -4,7 +4,6 @@ from schemas.schemas import GraphState
 from nodes.inizio_ricerca_db import ricerca_nel_db
 from nodes.ricerca_db_generica import ricerca_generica
 from nodes.generazione_response import generate_response
-from nodes.aiuto_documentazione import aiuto_documentazione
 from nodes.ricerca_db_specifica import ricerca_specifica
 from nodes.input_validator import valida_input
 
@@ -67,7 +66,7 @@ def router_ricerca(state: GraphState):
 graph = StateGraph(GraphState)
 
 graph.add_node(RICERCA_NEL_DB, ricerca_nel_db)
-graph.add_node(AIUTO_DOCUMENTAZIONE, aiuto_documentazione)
+# graph.add_node(AIUTO_DOCUMENTAZIONE, aiuto_documentazione)
 
 graph.set_conditional_entry_point(
     router_iniziale,
